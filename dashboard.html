@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Minds, Healthy Lives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Healthy Minds</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slider">
+            <img src="https://i.ibb.co/gSnv5gt/4.jpg" alt="Mental Health Image 1" class="active">
+            <img src="https://i.ibb.co/9TyGHTq/2.jpg" alt="Mental Health Image 2">
+            <img src="https://i.ibb.co/BgTMn7C/3.jpg" alt="Mental Health Image 3">
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="currentSlide(0)"></div>
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+        </div>
+        <div class="typewriter">
+            <div>
+        <h1>Healthy Minds, Healthy Lives</h1>
+            </div>
+        </div>
+        <p>Your journey to holistic well-being starts here. Explore, learn, and grow with us!</p>
+        <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to promoting physical, mental, and emotional well-being through various resources and activities.</p>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature-card1">
+            <img src="https://i.ibb.co/GVF1HKq/8.jpg" alt="Mental Wellness">
+            <h3>Mental Wellness</h3>
+            <p>Discover mindfulness techniques and stress management tools.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://i.ibb.co/jJ9rbb7/6.jpg" alt="Physical Fitness">
+            <h3>Physical Fitness</h3>
+            <p>Access tailored fitness routines for all levels.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://i.ibb.co/bm77xqw/5.jpg" alt="Emotional Health">
+            <h3>Emotional Health</h3>
+            <p>Build emotional resilience and improve relationships.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Gallery Image 1">
+            <img src="image2.jpg" alt="Gallery Image 2">
+            <img src="image3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Add this just before the closing </body> tag -->
+<div class="notification-bar" id="notificationBar">
+    <span class="party-popper">🎉</span>
+    <span><u>Feeling alone?</u> Check out our new Chatbot!</span>
+    <button onclick="goToChatbot()">Go to Chatbot</button>
+    <span class="party-popper">🎉</span>
+    <button class="close-btn" onclick="closeNotification()">✖</button>
+</div>
+<!-- Add this just before the closing </body> tag -->
+<div class="notification-bar" id="notificationBar">
+    <span class="party-popper">🎉</span>
+    <span><u>Feeling alone?</u> Check out our new Chatbot!</span>
+    <button onclick="toggleChatbot()">Go to Chatbot</button>
+    <span class="party-popper">🎉</span>
+    <button class="close-btn" onclick="closeNotification()">✖</button>
+</div>
+
+<div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-header">Mental Health Chatbot</div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
